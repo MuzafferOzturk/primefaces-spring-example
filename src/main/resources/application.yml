@@ -1,0 +1,5 @@
+joinfaces:
+  jsf:
+    PROJECT_STAGE: Development
+  primefaces:
+    theme: nova-light

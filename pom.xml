@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.0</version>
+    </parent>
+    <groupId>org.example</groupId>
+    <artifactId>primefaces-spring-example</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <java.version>11</java.version>
+        <primefaces.version>8.0</primefaces.version>
+        <joinfaces.version>4.4.0-rc1</joinfaces.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.primefaces</groupId>
+            <artifactId>primefaces</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.joinfaces</groupId>
+            <artifactId>jsf-spring-boot-starter</artifactId>
+        </dependency>
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.joinfaces</groupId>
+                <artifactId>joinfaces-dependencies</artifactId>
+                <version>${joinfaces.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.primefaces</groupId>
+                <artifactId>primefaces</artifactId>
+                <version>${primefaces.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
